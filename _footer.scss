@@ -1,0 +1,126 @@
+.footer {
+    background-color: #316099;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: relative;
+
+    &_h3 {
+
+        font-size: 36px;
+        line-height: 46px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        width: 340.96px;
+        padding-top: 91px;
+        margin-bottom: 32px;
+    }
+
+    &_p {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        width: 494.77px;
+        height: 80px;
+        margin-bottom: 96px;
+        opacity: 0.6;
+    }
+
+    &_button {
+        position: absolute;
+        width: 236.63px;
+        height: 56px;
+        left: 1015px;
+        top: 165px;
+        background: #5A98D0;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding-top: 15px;
+
+        &:hover {
+            color: #EBA7A7;
+            transition: 0.3s;
+        }
+    }
+
+    &_contacts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    &_text_p,
+    &_tel_p,
+    &_email_p {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    &_rights {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    &_hr {
+        opacity: 0.4;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .footer {
+
+        &_h3,
+        &_p {
+            width: 336px;
+        }
+
+        &_button {
+            padding: 3px;
+            left: 511px;
+            width: 133.04px;
+            height: 31.48px;
+        }
+
+        &_contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           height: 120px;
+        }
+    }
+
+}
+@media(max-width:376px){
+    .footer{
+        &_h3{
+            font-size: 24px;
+line-height: 28px;
+text-align: center;
+        }
+        &_p{
+            font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+text-align: center;
+letter-spacing: 0.05em;
+        }
+        &_button{
+            left: 132px;
+            top: 300px;
+        }
+        &_contacts{
+            line-height: 19px;
+        }
+    }
+}

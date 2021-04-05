@@ -1,0 +1,189 @@
+.project {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 112px;
+
+    &_h2 {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 32px;
+    }
+
+    &_p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 64px;
+        width: 750px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: #222222;
+    }
+
+    &_block {
+        &_top {
+            height: 480px;
+            margin-bottom: 32px;
+            background-image: url(img/project/background-top-2.png), url(img/project/background-top.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+
+            &_p {
+                position: absolute;
+                margin-top: 11%;
+                margin-left: 50%;
+                font-size: 32px;
+                line-height: 46px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+        }
+
+        &_bottom {
+            display: flex;
+
+            &_left {
+                height: 417px;
+                width: 554px;
+                margin-right: 25px;
+                background-image: url(img/project/background-bottom.png), url(img/project/background-bottom-1.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 8px;
+            }
+
+            &_right {
+                height: 417px;
+                width: 554px;
+                background-image: url(img/project/background-bottom.png), url(img/project/background-bottom-2.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 8px;
+            }
+
+            &_right_p,
+            &_left_p {
+                position: absolute;
+                font-size: 28px;
+                line-height: 46px;
+                margin-top: 32px;
+                margin-left: 32px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .center {
+        padding-left: 5%;
+        padding-right: 0%;
+    }
+
+    .project {
+        &_p {
+            width: 520px;
+        }
+
+        &_block {
+            &_top {
+                width: 704px;
+                height: 296px;
+
+                &_p {
+                    margin-left: 240px;
+                }
+
+                &_img {
+                    width: 235px;
+                    height: 302px;
+                }
+            }
+
+            &_bottom {
+                &_left {
+                    margin-right: 32px;
+                }
+
+                &_left,
+                &_right {
+                    width: 336px;
+                    height: 253px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .project {
+        &_h2 {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &_p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 82px;
+            width: 343px;
+        }
+
+        &_block {
+            width: 343px;
+            height: 144px;
+
+            &_top {
+                width: 343px;
+                height: 144px;
+                margin-bottom: 16px;
+
+                &_img {
+                    width: 150px;
+                    height: 145px;
+                }
+
+                &_p {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-left: 136px;
+                }
+            }
+
+            &_bottom {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 64px;
+&_left{
+    margin-bottom: 16px;
+}
+                &_left,
+                &_right {
+                    width: 343px;
+                    height: 255px;
+
+                    &_p {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
