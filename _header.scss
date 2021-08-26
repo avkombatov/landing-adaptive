@@ -81,6 +81,7 @@
 
 @media (min-width:1024px)and(max-width:1200px) {
     .header {
+        height: 700px;
         &_bottom_right_img {
             width: 450px;
         }
@@ -89,8 +90,12 @@
 
 @media(min-width:900px)and(max-width:1023px) {
     .header {
+        height: 630px;   
         padding-left: 5%;
         padding-right: 5%;
+        &_bottom{
+            margin-top: 65px;
+        }
 
         &_bottom_right_img {
             width: 400px;
@@ -160,13 +165,14 @@
         }
 
         &_bottom {
-            margin-top: 36px;
+            margin-top: 15px;
 
             &_right_img {
                 display: none;
             }
 
             &_left {
+                margin: 20px auto;
                 &_h1 {
                     width: 343px;
                     height: 76px;
@@ -231,13 +237,14 @@
         }
 
         &_bottom {
-            margin-top: 36px;
+            margin-top: 5px;
 
             &_right_img {
                 display: none;
             }
 
             &_left {
+                margin: 20px auto;
                 &_h1 {
                     width: 285px;
                     height: 76px;
