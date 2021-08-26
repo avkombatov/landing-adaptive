@@ -180,9 +180,6 @@
             }
 
             &_bottom {
-                &_left {
-                    // margin-right: 32px;
-                }
 
                 &_left,
                 &_right {
@@ -339,6 +336,7 @@
         }
     }
 }
+
 @media (min-width:320px)and (max-width: 374px) {
     .center {
         padding-left: 5%;
@@ -401,7 +399,7 @@
                 &_right {
                     width: auto;
                     height: 220px;
-                    background-size:contain;
+                    background-size: contain;
 
                     &_p {
                         font-size: 16px;
