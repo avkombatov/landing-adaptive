@@ -3,6 +3,13 @@
     padding-left: 8%;
     padding-right: 8%;
     position: relative;
+    padding-top: 90px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+    }
 
     &_h3 {
 
@@ -11,7 +18,7 @@
         letter-spacing: 0.05em;
         color: #FFFFFF;
         width: 340.96px;
-        padding-top: 91px;
+        // padding-top: 91px;
         margin-bottom: 32px;
     }
 
@@ -27,7 +34,8 @@
     }
 
     &_button {
-        position: absolute;
+        // position: absolute;
+        margin-top: 60px;
         width: 236.63px;
         height: 56px;
         left: 1015px;
@@ -76,7 +84,7 @@
 
 }
 
-@media(max-width: 768px) {
+@media(min-width: 900px)and(max-width:1024px) {
     .footer {
 
         &_h3,
@@ -84,12 +92,12 @@
             width: 336px;
         }
 
-        &_button {
-            padding: 3px;
-            left: 511px;
-            width: 133.04px;
-            height: 31.48px;
-        }
+        // &_button {
+        //     padding: 3px;
+        //     left: 511px;
+        //     width: 133.04px;
+        //     height: 31.48px;
+        // }
 
         &_contacts {
             display: flex;
@@ -101,30 +109,149 @@
 
 }
 
-@media(max-width:376px) {
+@media(min-width: 768px)and(max-width:899px) {
     .footer {
-        &_h3 {
-            font-size: 24px;
-            line-height: 28px;
-            text-align: center;
+
+        &_h3,
+        &_p {
+            width: 336px;
         }
 
-        &_p {
-            font-size: 16px;
-            line-height: 26px;
-            /* or 162% */
+        // &_button {
+        //     padding: 3px;
+        //     left: 511px;
+        //     width: 133.04px;
+        //     height: 31.48px;
+        // }
 
+        &_contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 120px;
+        }
+    }
+
+}
+
+@media(min-width: 425px)and(max-width:767px) {
+    .footer {
+        padding-top: 45px;
+
+        &_hr {
+            margin-top: 30px;
+        }
+
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+        &_p{
+            width: auto;
+        }
+
+        &_h3,
+        &_p {
+
+            margin: 0 auto;
             text-align: center;
-            letter-spacing: 0.05em;
         }
 
         &_button {
-            left: 132px;
-            top: 300px;
+            padding: 3px;
+            left: 511px;
+            width: 133.04px;
+            height: 31.48px;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
 
         &_contacts {
-            line-height: 19px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 120px;
         }
     }
+
 }
+@media(min-width: 320px)and(max-width:424px) {
+    .footer {
+        padding-top: 45px;
+        padding-bottom: 10px;
+
+        &_hr {
+            margin-top: 55px;
+        }
+
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+        &_p{
+            width: auto;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        &_h3{
+            font-size: 24px;
+line-height: 28px;
+width: 280px;
+
+        }
+
+        &_h3,
+        &_p {
+
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &_button {
+            padding: 3px;
+            left: 511px;
+            width: 133.04px;
+            height: 31.48px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        &_contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 120px;
+        }
+        &_rights{
+            text-align: center;
+        }
+    }
+
+}
+// @media(max-width:376px) {
+//     .footer {
+//         &_h3 {
+//             font-size: 24px;
+//             line-height: 28px;
+//             text-align: center;
+//         }
+
+//         &_p {
+//             font-size: 16px;
+//             line-height: 26px;
+//             /* or 162% */
+
+//             text-align: center;
+//             letter-spacing: 0.05em;
+//         }
+
+//         &_button {
+//             left: 132px;
+//             top: 300px;
+//         }
+
+//         &_contacts {
+//             line-height: 19px;
+//         }
+//     }
+// }
